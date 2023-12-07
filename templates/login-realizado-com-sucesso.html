@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login-realizado-com-sucesso.css') }}">
+    <meta charset="UTF-8">
+    <title>Login realizado com sucesso</title>
+</head>
+<body>
+    <h1>LOGIN REALIZADO COM SUCESSO</h1>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul class="flash-messages">
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+</body>
+</html>

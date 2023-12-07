@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Usuários</title>
+</head>
+<body>
+    <h1>Usuários</h1>
+    <ul>
+        {% for usuario in usuarios %}
+            <li>{{ usuario[0] }} - {{ usuario[1] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
